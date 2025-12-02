@@ -69,7 +69,7 @@ This file contains modern responsive layout, animations, and two image placehold
     /* images */
     .photos{display:flex;gap:14px;flex-direction:column}
     .photo{background:var(--glass);padding:6px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.03)}
-    .photo img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;transition:transform .6s cubic-bezier(.2,.9,.3,1)}
+    .photo img{display:block;width:100%;height:100%;object-fit:cover;/* removed fixed aspect ratio */ height:auto;transition:transform .6s cubic-bezier(.2,.9,.3,1)}
     .photo:hover img{transform:scale(1.06) rotate(-1.5deg)}
 
     /* small cards */
@@ -105,7 +105,7 @@ This file contains modern responsive layout, animations, and two image placehold
       <div class="grid">
         <div class="intro">
           <h1>ياسر احمد <span class="en">Yasser Ahmed</span></h1>
-          <p class="quote">(عايزني اصارحك منغير ماتعرف لا انا هصارحك وانت عارف ههههه انا ياسر احمد حمدي لو عايز تصارحني انت كمان ابعتلي خاص )</p>
+          <p class="quote">(عايزني اصارحك منغير ماتعرف لا انا هصارحك وانت عارف ههههه انا ياسر احمد حمدي)</p>
 
           <p>مرحبًا! هذا موقع تعريفي بسيط وعصري مصمّم بملف واحد — مناسب للرفع على GitHub Pages. يمكنك استبدال الصور في مجلد <code>images/</code>، وتعديل النص بسهولة.</p>
 
@@ -121,7 +121,7 @@ This file contains modern responsive layout, animations, and two image placehold
         </div>
 
         <aside class="photos" id="photos">
-          <div class="photo"><img src="images/photo1.jpg" alt="صورتي علي الفيسبوك"></div>
+          <div class="photo"><img src="images/photo1.jpg" alt="صورة ياسر 1"></div>
           <div class="photo"><img src="images/photo2.gif" alt="صورة ياسر 2"></div>
         </aside>
       </div>
